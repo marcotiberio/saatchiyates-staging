@@ -555,6 +555,11 @@ img.non-full-width {
 
 /* private-sales */
 
+.private-sales .video-container,
+.private-sales .private-sales-detail {
+  margin-top: 100px;
+}
+
 .private-sales img,
 .contact img {
   height: 100vh;
@@ -693,6 +698,16 @@ iframe {
 .mobile {
   display: none;
 }
+
+/* Privacy Policy */
+
+.privacy-policies-detail .header {
+  margin-bottom: 20px;
+}
+
+/* Privacy Policy */
+
+
 
 
 

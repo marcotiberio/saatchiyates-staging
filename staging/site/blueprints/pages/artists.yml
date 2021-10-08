@@ -7,10 +7,14 @@ columns:
   main:
     width: 2/3
     fields:
-      files:   
+      # files:   
+      #   type: files
+      #   label: Artists Cover Picture (do not use)
+      #   template: image
+
+      coverImage:
+        label: Cover Images
         type: files
-        label: Artists Cover Picture (do not use)
-        template: image
 
   # sidebar
   sidebar:

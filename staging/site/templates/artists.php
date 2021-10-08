@@ -25,16 +25,17 @@
         </div>
 
         <div class="flex-artists item c2 no-padding item-relative">
-          <?php $images = $page->images() ?>
-          <?php if ($images->isNotEmpty()) : ?>
-            <?php foreach($images as $image): ?>
-              <?php if($image->orientation()==="portrait"): ?>
-                <img class="artists-list-img portrait-img" src="<?= $image->resize(null, null, 90)->url() ?>">
+          <?php
+          $coverImage =  $page->coverImage()->toFiles();
+          foreach($coverImage as $coverImage): ?>
+            <?php if ($coverImage->isNotEmpty()): ?>
+              <?php if($coverImage->orientation()==="portrait"): ?>
+                <img class="artists-list-img portrait-img" src="<?= $coverImage->resize(null, null, 90)->url() ?>">
               <?php else: ?>
-                <img class="artists-list-img" src="<?= $image->resize(null, null, 90)->url() ?>">
+                <img class="artists-list-img" src="<?= $coverImage->resize(null, null, 90)->url() ?>">
               <?php endif ?>
-            <?php endforeach ?>
-          <?php endif ?>
+            <?php endif ?>
+          <?php endforeach ?>            
         </div>
       </div>
     </main>

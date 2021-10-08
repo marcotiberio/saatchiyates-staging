@@ -68,7 +68,7 @@
     </div>
     <div class="row footer-bottom">
       <div class="twelfth columns">
-        <span><a href="privacy.php">Privacy Policy</a></span> 
+        <span><a href="/staging/privacy-policy">Privacy Policy</a></span> 
         <span><?= $site->copyright()->text() ?></span>  
       </div>
     </div>

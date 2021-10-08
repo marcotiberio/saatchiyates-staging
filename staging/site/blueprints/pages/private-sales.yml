@@ -5,7 +5,7 @@ title: Private Sales
 # Here we prevent changing the page status (the home page cannot be renamed or deleted by default)
 # More about page options: https://getkirby.com/docs/reference/panel/blueprints/page#options
 options:
-  changeStatus: false
+  changeStatus: true
 
 columns:
 
@@ -37,4 +37,3 @@ columns:
       files:
         type: files
         headline: Background Video
-
