@@ -12,19 +12,16 @@
         <!-- Current Exhibition -->
         <div class="item c-special-5 current">
           <div class="sub-title">Current</div>
-          <div>
-
+          <div class="exhibition-info">
             <?php
             $current =  $page->currentExhibitions()->toPages();
             foreach($current as $current): ?>
-              <div>
-                <h2><?= $current->name()->text() ?></h2>
+              <h2 class="top"><?= $current->name()->text() ?></h2>
+              <div class="bottom">
                 <span><?= $current->dates()->text() ?></span>
                 <a class="link selected" href="<?= $current->url() ?>">View exhibition</a>
               </div>
             <?php endforeach ?>
-
-            
           </div>
         </div>
         <!-- Current Exhibition -->

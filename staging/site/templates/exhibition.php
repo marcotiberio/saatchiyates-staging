@@ -70,20 +70,21 @@
 
 
           <div class="flex-column t-40">
-            <?php foreach ($page->images()->filterBy('template', '!=', 'profile') as $image): ?>
-              <?php if ($image->isEmpty()): ?>
+            <?php
+            $imageGallery =  $page->gallery()->toFiles();
+            foreach($imageGallery as $imageGallery): ?>
+              <?php if ($imageGallery->isEmpty()): ?>
                 <div class="item c3 w1">
               <?php else: ?>
-                <div class="item <?= $image->Column() ?> w1">
+                <div class="item <?= $imageGallery->Column() ?> w1">
               <?php endif ?>
-                <img src="<?= $image->resize(null, null, 90)->url() ?>">
-                <div class="caption">
-                  <div><?= $image->caption() ?></div>
-                  <div><?= $image->description() ?></div>
-                </div>
+              <img src="<?= $imageGallery->resize(null, null, 90)->url() ?>">
+              <div class="caption">
+                <div><?= $imageGallery->caption() ?></div>
+                <div><?= $imageGallery->description() ?></div>
+              </div>
               </div>
             <?php endforeach ?>
-
           </div>
 
           <div class="cat-buy">

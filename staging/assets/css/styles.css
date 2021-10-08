@@ -376,12 +376,18 @@ img.non-full-width {
 
 .exhibitions span+a,
 .exhibitions span+span {
-  text-align: center;
+  margin-left: 60px;
 }
 
 .exhibitions .current h2+div {
   margin-top: 20px;
 }
+
+/* .exhibitions .current .exhibition-info .bottom {
+  display: flex !important;
+  flex-flow: row wrap !important;
+  justify-content: space-between !important;
+} */
 
 .exhibitions .past h1,
 .exhibitions .past span {

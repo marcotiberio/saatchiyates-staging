@@ -7,12 +7,12 @@ columns:
   main:
     width: 2/3
     fields:
-      files:   
-        type: files
-        label: Exhibition Cover Picture
-        layout: cards
-        info: "{{ file.dimensions }}"
-        template: image
+      # files:   
+      #   type: files
+      #   label: Exhibition Cover Picture (do not use)
+      #   layout: cards
+      #   info: "{{ file.dimensions }}"
+      #   template: image
 
       currentExhibitions:
         label: Current Exhibition
