@@ -1,0 +1,17 @@
+Caption: ddfdfdfdf
+
+----
+
+Description: 
+
+----
+
+Column: c1
+
+----
+
+Template: image
+
+----
+
+Sort: 1

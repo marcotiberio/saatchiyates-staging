@@ -1,0 +1,21 @@
+Title: Exhibitions
+
+----
+
+Files: 
+
+----
+
+Currentexhibitions:
+
+- exhibitions/exhibition-benjamin-spiers
+
+----
+
+Pastexhibitions:
+
+- exhibitions/exhibition-allez-la-france
+
+----
+
+Exhibitions: - exhibitions/exhibition-benjamin-spiers

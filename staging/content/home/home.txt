@@ -1,0 +1,33 @@
+Title: Home
+
+----
+
+Exhibitionname: 
+
+----
+
+Exhibitiondate: 
+
+----
+
+Exhibitonsubheadline: 
+
+----
+
+Subheadline: fdgdsgdfs
+
+----
+
+Headline: hgsfgdf
+
+----
+
+Exhibiton-subheadline: tetsing
+
+----
+
+Exhibition-date: 
+
+----
+
+Exhibition-name: 

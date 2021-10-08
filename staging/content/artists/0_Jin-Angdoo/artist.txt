@@ -1,0 +1,45 @@
+Title: Jin Angdoo
+
+----
+
+Profile:
+
+- jin-angdoo-profile-image-320x480-q90.jpg
+
+----
+
+Cv:
+
+- jin-angdoo.-updated-cv.pdf
+
+----
+
+Firstname: Jin
+
+----
+
+Lastname: Angdoo
+
+----
+
+Bios: Born 1981 in Yeoju, Korea
+
+----
+
+Biosdetail:
+
+Asian- American artist Jin Angdoo is part of an art collective movement titled “Modern Jazz”, that is based between Paris and Marseille, alongside artists; Mathieu Julien, Hams Klemens, and Kevin Pinsembert. Angdoo's signature expression boasts bold abstract iconography within large minimal compositions. Giant floating forms of polka dots, dragonfly crosses and floral insignia populate her canvasses. In their simplicity they become powerful flags which represent something larger than the sum of their parts.
+
+Angdoo currently lives and works between Los Angeles and Paris.
+
+----
+
+Additionaldropdownlabel: QR Code
+
+----
+
+Additionaldropdown: Lorem Ipsum
+
+----
+
+Name: Jin Angdoo

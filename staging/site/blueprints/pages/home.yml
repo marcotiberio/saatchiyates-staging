@@ -1,0 +1,39 @@
+# Each page blueprint must have a title, the title may be different from the file name
+title: Home
+
+icon: 🏠
+
+options:
+  changeStatus: false
+
+columns:
+
+  # main
+  main:
+    width: 2/3
+    sections:
+      content:
+        type: fields
+        fields:
+          exhibitionName:
+            label: Exhibition Name
+            type: text
+          exhibitionDate:
+            label: Exhibition Date
+            type: text
+            width: 1/2
+          exhibitonSubHeadline:
+            label: Exhibition Tag
+            type: text
+            width: 1/2
+
+  # sidebar
+  sidebar:
+    width: 1/3
+    sections:
+
+      # a list of files
+      files:
+        type: files
+        headline: Background Image
+

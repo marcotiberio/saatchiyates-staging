@@ -1,0 +1,266 @@
+Title: Exhibition Benjamin Spiers
+
+----
+
+Slideshow:
+
+- ben-spiers-carousel-1-dsc_3540-q90.jpg
+- ben-spiers-carousel-2-dsc_3523-q90.jpg
+- ben-spiers-carousel-3-dsc_3574-q90.jpg
+
+----
+
+Buycatalogue: 
+
+----
+
+Name: Benjamin Spiers
+
+----
+
+Dates: 9 September - 20 October 2021
+
+----
+
+Exhibitiontype: Solo Exhibition
+
+----
+
+Exhibitiondetail:
+
+This autumn, Saatchi Yates are pleased to present a solo exhibition of new paintings by British painter Benjamin Spiers (1972).
+
+Spiers pairs methodical skills, with a mastery of styles that include surrealism, abstraction and cubism, bringing alive a world of hypnogogic fears and fantasies to his canvases. His subjects are seemingly at ease with their outlandish and grotesque countenances, their bulging necks, twisted limbs, and vibrant eyes beckon the viewer into the deranged magical world where they reside.
+
+Spiers studied at Goldsmiths, London under the tutorage of Peter Doig whose mastery of the marriage of traditional techniques with a contemporary figurative style had a founding influence. Spiers’ works are pristinely rendered with a painterly prowess rare among his contemporaries, displaying a profound grasp of the history of art evidenced by the many acts of appropriation visible in his work. Spiers has later tutored at City & Guilds of London Art School shaping a new wave of Post- Digital Pop artists including British artist Oli Epp.
+
+In 2006 Spiers was selected for the John Moore’s Painting prize at the Walker Art Gallery, Liverpool, and in 2015 was a finalist in the 6th Manifest international painting award, Cincinnati. He has exhibited internationally including solo exhibitions at Carl Kostyál, London; James Hyman Fine Art, London; Hales Gallery, London; James Coleman Fine Art, London and the Museum of the Benemerita, Universidad Autonoma de Puebla, Mexico. His autumn show at Saatchi Yates will be the artist's largest scale presentation in London.
+
+----
+
+Additionaldropdownlabel: 
+
+----
+
+Additionaldropdown: 
+
+----
+
+Shopifybuttondiv: <div id=‘product-component-1633607610000’></div>
+
+----
+
+Shopifybutton:
+
+<script type=“text/javascript”>
+/*<![CDATA[*/
+(function () {
+  var scriptURL = ‘https://sdks.shopifycdn.com/buy-button/latest/buy-button-storefront.min.js’;
+  if (window.ShopifyBuy) {
+    if (window.ShopifyBuy.UI) {
+      ShopifyBuyInit();
+    } else {
+      loadScript();
+    }
+  } else {
+    loadScript();
+  }
+  function loadScript() {
+    var script = document.createElement(‘script’);
+    script.async = true;
+    script.src = scriptURL;
+    (document.getElementsByTagName(‘head’)[0] || document.getElementsByTagName(‘body’)[0]).appendChild(script);
+    script.onload = ShopifyBuyInit;
+  }
+  function ShopifyBuyInit() {
+    var client = ShopifyBuy.buildClient({
+      domain: ‘saatchi-yates-shop.myshopify.com’,
+      storefrontAccessToken: ‘74b93b7e6803a291651c7597551ca0fa’,
+    });
+    ShopifyBuy.UI.onReady(client).then(function (ui) {
+      ui.createComponent(‘product’, {
+        id: ‘6754999435469’,
+        node: document.getElementById(‘product-component-1633607610000’),
+        moneyFormat: ‘%C2%A3%7B%7Bamount%7D%7D’,
+        options: {
+  “product”: {
+    “styles”: {
+      “product”: {
+        “@media (min-width: 601px)“: {
+          “max-width”: “100%“,
+          “margin-left”: “0",
+          “margin-bottom”: “50px”
+        },
+        “text-align”: “left”
+      },
+      “title”: {
+        “font-family”: “Arial, sans-serif”,
+        “font-weight”: “normal”,
+        “font-size”: “26px”,
+        “color”: “#000000”
+      },
+      “button”: {
+        “font-family”: “Arial, sans-serif”,
+        “:hover”: {
+          “background-color”: “#050E00”
+        },
+        “background-color”: “#030800”,
+        “:focus”: {
+          “background-color”: “#050E00"
+        },
+        “padding-left”: “34px”,
+        “padding-right”: “34px”
+      },
+      “price”: {
+        “font-family”: “Big Caslon, serif”,
+        “font-size”: “18px”,
+        “color”: “#000000”
+      },
+      “compareAt”: {
+        “font-family”: “Big Caslon, serif”,
+        “font-size”: “15.299999999999999px”,
+        “color”: “#000000"
+      },
+      “unitPrice”: {
+        “font-family”: “Big Caslon, serif”,
+        “font-size”: “15.299999999999999px”,
+        “color”: “#000000”
+      },
+      “description”: {
+        “font-family”: “Arial, sans-serif”
+      }
+    },
+    “layout”: “horizontal”,
+    “contents”: {
+      “img”: false,
+      “imgWithCarousel”: true,
+      “description”: true
+    },
+    “width”: “100%“,
+    “text”: {
+      “button”: “Add to cart”
+    }
+  },
+  “productSet”: {
+    “styles”: {
+      “products”: {
+        “@media (min-width: 601px)“: {
+          “margin-left”: “-20px”
+        }
+      }
+    }
+  },
+  “modalProduct”: {
+    “contents”: {
+      “img”: false,
+      “imgWithCarousel”: true,
+      “button”: false,
+      “buttonWithQuantity”: true
+    },
+    “styles”: {
+      “product”: {
+        “@media (min-width: 601px)“: {
+          “max-width”: “100%“,
+          “margin-left”: “0px”,
+          “margin-bottom”: “0px”
+        }
+      },
+      “button”: {
+        “font-family”: “Arial, sans-serif”,
+        “:hover”: {
+          “background-color”: “#050E00"
+        },
+        “background-color”: “#030800",
+        “:focus”: {
+          “background-color”: “#050E00”
+        },
+        “padding-left”: “34px”,
+        “padding-right”: “34px”
+      },
+      “title”: {
+        “font-family”: “Helvetica Neue, sans-serif”,
+        “font-weight”: “bold”,
+        “font-size”: “26px”,
+        “color”: “#4C4C4C”
+      },
+      “price”: {
+        “font-family”: “Helvetica Neue, sans-serif”,
+        “font-weight”: “normal”,
+        “font-size”: “18px”,
+        “color”: “#4C4C4C”
+      },
+      “compareAt”: {
+        “font-family”: “Helvetica Neue, sans-serif”,
+        “font-weight”: “normal”,
+        “font-size”: “15.299999999999999px”,
+        “color”: “#4C4C4C”
+      },
+      “unitPrice”: {
+        “font-family”: “Helvetica Neue, sans-serif”,
+        “font-weight”: “normal”,
+        “font-size”: “15.299999999999999px”,
+        “color”: “#4C4C4C”
+      },
+      “description”: {
+        “font-family”: “Helvetica Neue, sans-serif”,
+        “font-weight”: “normal”,
+        “font-size”: “14px”,
+        “color”: “#4C4C4C”
+      }
+    },
+    “text”: {
+      “button”: “Add to cart”
+    }
+  },
+  “option”: {},
+  “cart”: {
+    “styles”: {
+      “button”: {
+        “font-family”: “Arial, sans-serif”,
+        “:hover”: {
+          “background-color”: “#050E00"
+        },
+        “background-color”: “#030800",
+        “:focus”: {
+          “background-color”: “#050E00”
+        }
+      }
+    },
+    “text”: {
+      “total”: “Subtotal”,
+      “button”: “Checkout”
+    }
+  },
+  “toggle”: {
+    “styles”: {
+      “toggle”: {
+        “font-family”: “Arial, sans-serif”,
+        “background-color”: “#030800”,
+        “:hover”: {
+          “background-color”: “#050E00"
+        },
+        “:focus”: {
+          “background-color”: “#050E00”
+        }
+      }
+    }
+  }
+},
+      });
+    });
+  }
+})();
+/*]]>*/
+</script>
+
+----
+
+Profile: 
+
+----
+
+Cv: 
+
+----
+
+Biosdetail: 

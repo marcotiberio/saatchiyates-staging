@@ -1,0 +1,13 @@
+Caption: Test Caption
+
+----
+
+Description: Test Description
+
+----
+
+Column: 
+
+----
+
+Template: image
