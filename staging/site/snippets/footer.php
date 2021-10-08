@@ -5,7 +5,7 @@
 
   <!-- Initialize Swiper -->
   <script>
-    var swiper = new Swiper(".exhibiotionSwiper", {
+    var swiper = new Swiper(".exhibitionSwiper", {
       slidesPerView: 1,
       spaceBetween: 20,
       loop: true,

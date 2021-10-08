@@ -2,7 +2,18 @@ Title: Allez La France!
 
 ----
 
-Slideshow: 
+Slideshow:
+
+- 2-dsc-8844-1280x768-q90.jpg
+- 8-dsc-8973-1280x768-q90.jpg
+- 7-dsc-8977-1280x768-q90.jpg
+- 1-dsc-8919-1280x768-q40.jpg
+- 5-dsc-8913-1280x768-q40.jpg
+- 4-dsc-8911-1280x768-q40.jpg
+- 9-dsc-8907-1280x768-q40.jpg
+- 11-dsc-8989-1280x768-q40.jpg
+- 12-dsc-8943-1280x768-q40.jpg
+- 10-dsc-8917-1280x768-q40.jpg
 
 ----
 

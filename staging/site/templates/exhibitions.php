@@ -13,15 +13,18 @@
         <div class="item c-special-5 current">
           <div class="sub-title">Current</div>
           <div>
+
             <?php
-            $currentExhibitions =  $page->currentExhibitions()->toPages();
-            foreach($currentExhibitions as $currentExhibitions): ?>
+            $current =  $page->currentExhibitions()->toPages();
+            foreach($current as $current): ?>
               <div>
-                  <h2><?= $currentExhibitions->name()->text() ?></h2>
-                  <span><?= $currentExhibitions->dates()->text() ?></span>
-                  <a class="link selected" href="<?= $currentExhibitions->url() ?>">View exhibition</a>
+                <h2><?= $current->name()->text() ?></h2>
+                <span><?= $current->dates()->text() ?></span>
+                <a class="link selected" href="<?= $current->url() ?>">View exhibition</a>
               </div>
             <?php endforeach ?>
+
+            
           </div>
         </div>
         <!-- Current Exhibition -->
@@ -30,11 +33,13 @@
         <div class="item c-special-7">
           <div class="swiper exhibitionSwiper">
             <div class="swiper-wrapper">
-            <?php foreach($page->children()->listed()->sortBy('name', 'asc',) as $image): ?>
-              <?php foreach($page->slideshow()->yaml() as $imageslideshow): ?>
+            <?php 
+            $current = $page->currentExhibitions()->toPages();
+            foreach($current as $slideslide): ?>
+              <?php foreach($slideslide->slideshow()->yaml() as $image): ?>
                 <div class="swiper-slide">
-                    <?php if($imageslideshow = $page->image($imageslideshow)): ?>
-                      <?= $imageslideshow->crop(1200,500)->html(); ?>  		    
+                    <?php if($image = $slideslide->image($image)): ?>
+                      <?= $image->crop(1200,500)->html(); ?>          
                     <?php endif ?>
                 </div>
               <?php endforeach; ?>
@@ -54,11 +59,11 @@
         <div class="item c1 past-title">Past</div>
         <div class="item">
           <?php
-          $pastExhibitions =  $page->pastExhibitions()->toPages();
-          foreach($pastExhibitions as $pastExhibitions): ?>
-            <h2><a class="link" href="<?= $pastExhibitions->url() ?>"><?= $pastExhibitions->name()->text() ?></a></h2>
-            <span><?= $pastExhibitions->dates()->text() ?></span>
-            <span><?= $pastExhibitions->exhibitionType()->text() ?></span>
+          $past =  $page->pastExhibitions()->toPages();
+          foreach($past as $past): ?>
+            <h2><a class="link" href="<?= $past->url() ?>"><?= $past->name()->text() ?></a></h2>
+            <span><?= $past->dates()->text() ?></span>
+            <span><?= $past->exhibitionType()->text() ?></span>
           <?php endforeach ?>
         </div>
       </div>
