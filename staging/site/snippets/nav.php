@@ -86,9 +86,9 @@
         <div> 
           <span class="dot"></span>
           <?php if(date("l")=="Sunday"){ ?>
-            <span>Open today: 12pm - 6pm</span>
+            <span>Open today: <?= $site->marqueeOpeningHoursWeekend()->text() ?></span>
           <?php } else { ?>
-            <span>Open today: 10am - 6pm</span>
+            <span>Open today: <?= $site->marqueeOpeningHoursWeek()->text() ?></span>
           <?php } ?>
           <span class="dot"></span>
           <span>Currently Showing: <?= $site->mobileExhibition()->text() ?></span>

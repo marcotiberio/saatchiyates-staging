@@ -271,6 +271,10 @@ nav span {
   text-transform: uppercase;
 }
 
+.home .logo .logotype {
+  color: #fff;
+}
+
 footer .logo {
   width: 127px;
   height: 19px;
@@ -953,6 +957,10 @@ iframe {
     vertical-align: middle;
   }
 
+  .menu-btn img {
+    filter: invert(1);
+  }
+
   .close-btn,
   .menu-btn {
     position: absolute;
@@ -1025,6 +1033,10 @@ iframe {
     text-transform: uppercase;
   }
 
+  .home .logo-mobile .logotype {
+    color: #fff;
+  }
+
   nav .logotype {
     position: absolute;
     display: inline;
@@ -1034,9 +1046,12 @@ iframe {
     color: #000;
     font-family: Arial Black, Helvetica, sans-serif;
     font-size: 22.5px;
-    /* font-weight: 800; */
     letter-spacing: 0.5px;
     text-transform: uppercase;
+  }
+
+  .home nav .logotype {
+    color: #fff;
   }
 
   .mobile {
