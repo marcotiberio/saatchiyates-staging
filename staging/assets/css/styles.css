@@ -257,9 +257,18 @@ nav span {
 }
 
 .logo {
-  width: 300px;
+  width: 350px;
   height: 25px;
   transition: width 0.5s;
+}
+
+.logo .logotype {
+  color: #000;
+  font-family: Arial Black, Helvetica, sans-serif;
+  font-size: 33px;
+  font-weight: 800;
+  letter-spacing: 0.5px;
+  text-transform: uppercase;
 }
 
 footer .logo {
@@ -272,6 +281,14 @@ footer .logo {
   background-color: white;
   min-height: 100vh;
   z-index: 2;
+}
+
+.page.background-desktop {
+  display: block;
+}
+
+.page.background-mobile {
+  display: none;
 }
 
 .home .page {
@@ -766,6 +783,8 @@ iframe {
   }
 
   .align-bottom {
+    top: 75vh;
+    position: absolute;
     text-align: center;
     width: calc(100vw - 80px);
   }
@@ -820,6 +839,14 @@ iframe {
 
   .page {
     padding-bottom: 160px;
+  }
+
+  .page.background-desktop {
+    display: none;
+  }
+
+  .page.background-mobile {
+    display: block;
   }
 
   .padding-100-mobile {
@@ -962,10 +989,10 @@ iframe {
   }
 
   .extra {
-	bottom: 0;
-    position: fixed;
+	  bottom: 0;
+    position: relative;
     width: calc(100vw - 40px);
-    margin-bottom: 40px;
+    margin-top: 10vh;
   }
 
   .extra div+div {
@@ -984,9 +1011,32 @@ iframe {
   .mobile .logo-mobile {
     position: absolute;
     display: inline;
-    top: 30px;
-    left: 20px;
+    top: 26.5px;
+    left: 18.5px;
     margin-bottom: 0px;
+  }
+
+  .logo-mobile {
+    color: #000;
+    font-family: Arial Black, Helvetica, sans-serif;
+    font-size: 22.5px;
+    /* font-weight: 800; */
+    letter-spacing: 0.5px;
+    text-transform: uppercase;
+  }
+
+  nav .logotype {
+    position: absolute;
+    display: inline;
+    top: 24px;
+    left: 18.5px;
+    margin-bottom: 0px;
+    color: #000;
+    font-family: Arial Black, Helvetica, sans-serif;
+    font-size: 22.5px;
+    /* font-weight: 800; */
+    letter-spacing: 0.5px;
+    text-transform: uppercase;
   }
 
   .mobile {

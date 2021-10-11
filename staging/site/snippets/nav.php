@@ -9,12 +9,13 @@
   <nav>
 
     <div class="logo">
-      <a href="<?= $site->url() ?>">
-      <?php if($filename=="saatchi-yates-cms" || $filename=='saatchi-yates'){ ?>
+      <a class="logotype" href="<?= $site->url() ?>">
+      <!-- <?php if($filename=="saatchi-yates-cms" || $filename=='saatchi-yates'){ ?>
         <img class="logo" src="<?= url('assets/img/SY-Full-logo-w.svg')?>">
       <?php } else { ?> 
         <img class="logo" src="<?= url('assets/img/SY-Full-logo.svg')?>">
-      <?php } ?>
+      <?php } ?> -->
+      <?= $site->title() ?>
       </a>
     </div>
 
@@ -51,11 +52,12 @@
 <header class="mobile">
 
   <a class="logo-mobile" href="<?= $site->url() ?>">
-    <?php if($filename=="saatchi-yates-cms" || $filename=='saatchi-yates'){ ?>
+    <!-- <?php if($filename=="saatchi-yates-cms" || $filename=='saatchi-yates'){ ?>
       <img class="logo" src="<?= url('assets/img/SY-Full-logo-w.svg')?>">
-    <?php } else { ?>
+    <?php } else { ?> 
       <img class="logo" src="<?= url('assets/img/SY-Full-logo.svg')?>">
-    <?php } ?>
+    <?php } ?> -->
+    <span class="logotype"><?= $site->title() ?></span>
   </a>
 
   <div class="menu-btn">Menu 
@@ -68,7 +70,7 @@
   </div>
 
   <nav>
-    <a href="index.php"><img class="logo" src="<?= url('assets/img/SY-Full-Logo.svg')?>"></a>
+    <a href="index.php"><span class="logotype"><?= $site->title() ?></span></a>
     <?php
     // main menu items
     $items = $pages->find('artists','exhibitions','private-sales','news','contact');

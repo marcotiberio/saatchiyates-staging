@@ -26,7 +26,7 @@
 
         <div class="flex-artists item c2 no-padding item-relative">
           <?php
-          $coverImage =  $page->coverImage()->toFiles();
+          $coverImage = $page->coverImage()->toFiles();
           foreach($coverImage as $coverImage): ?>
             <?php if ($coverImage->isNotEmpty()): ?>
               <?php if($coverImage->orientation()==="portrait"): ?>
