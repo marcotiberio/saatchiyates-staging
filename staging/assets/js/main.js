@@ -70,7 +70,9 @@ $(document).ready(function(){
 
     $(".close-btn").click(function(){
         $(".mobile nav").fadeToggle('fast');
-    }); 
+    });
+
+    // $('.marquee').width($('.marquee__inner1').width());
 
 });
 

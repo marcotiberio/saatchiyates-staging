@@ -804,14 +804,14 @@ iframe {
   nav {
 	  flex-flow: column wrap;
     grid-auto-rows: auto;
-	grid-template-columns: 1fr;
-	padding: 30px 20px;
-	background-color: #fff;
-	width: calc(100vw - 40px);
-	min-height: 100vh;
-	text-align: center;
-	position: fixed;
-	z-index: 10;
+    grid-template-columns: 1fr;
+    padding: 30px 20px;
+    background-color: #fff;
+    width: calc(100vw - 40px);
+    min-height: 100vh;
+    text-align: center;
+    position: fixed;
+    z-index: 10;
   }
 
   header,
@@ -821,7 +821,12 @@ iframe {
   }
 
   header.mobile {
+    background-color: white;
+    height: 76px;
     padding: 0;
+    position: fixed;
+    width: 100vw;
+    z-index: 1000;
   }
 
   main {
@@ -870,6 +875,11 @@ iframe {
   .home header.mobile span,
   .home header.mobile div {
     color: #000;
+  }
+
+  .home header.mobile {
+    background: linear-gradient(to bottom, rgba(255, 255, 255, 0.1), rgba(255, 255, 255, 0));
+    backdrop-filter: blur(8px);
   }
 
   .home header.mobile .menu-btn {
@@ -957,7 +967,7 @@ iframe {
     vertical-align: middle;
   }
 
-  .menu-btn img {
+  .home .menu-btn img {
     filter: invert(1);
   }
 
@@ -983,6 +993,7 @@ iframe {
   }
 
   .notice-mobile {
+    left: 0;
     position: fixed;
     top: 73px;
     width: 100vw;
@@ -1059,6 +1070,7 @@ iframe {
   }
 
   /* artist mobile */
+
   .artists-list .link {
     margin-bottom: 30px;
   }
@@ -1070,6 +1082,7 @@ iframe {
 
 
   /* artist-detail mobile */
+
   .artist-detail p {
     max-width: 100%;
   }
@@ -1111,6 +1124,7 @@ iframe {
   .item.c3 {
     width: 100%;
   }
+
 
   /* private-sales mobile*/
   .private-sales-detail,
@@ -1251,7 +1265,7 @@ iframe {
     display: block;
   }
 
-  /* exhibitpn mobile */
+  /* exhibition mobile */
 
   .exhibitions .c-special-5 {
     margin-top: 40px;
@@ -1261,58 +1275,200 @@ iframe {
     margin-bottom: 10px;
   }
 
+  /* marquee */
+
   .marquee {
     height: 50px;
-    /*overflow: hidden;*/
-    position: relative;
+    overflow: hidden;
   }
 
-  .marquee div {
+  .marquee__inner1 {
+    width: 100%;
+  }
+
+  /* .marquee {
+    margin: 0 auto;
+    white-space: nowrap;
+    overflow: hidden;
     position: absolute;
-    width: 1000px;
-    height: auto;
+  }
+  
+  .marquee .marquee__inner {
+    display: inline-block;
+    padding-left: 200%;
+    animation: marquee 10s linear infinite;
+  }
+  
+  .marquee2 .marquee__inner {
+    animation-delay: 2.5s;
+  }
+  
+  @keyframes marquee {
+    0% {
+      transform: translate(0, 0);
+    }
+    100% {
+      transform: translate(-100%, 0);
+    }
+  } */
+
+  /* .marquee {
+    width: 110% !important;
+    height: 50px;
+    overflow: hidden;
+    white-space: nowrap;
+  }
+
+  .marquee__inner1 {
+    position: absolute;
+    width: 100%;
+    display: inline-block;
+    animation: marquee 10s linear infinite;
+  }
+
+  .marquee__inner2 {
+    position: absolute;
+    width: 100%;
+    display: inline-block;
+    animation: marquee2 10s linear infinite;
+    animation-delay: 5s;
+  }
+
+  @keyframes marquee {
+    from {
+      transform: translateX(100%);
+    }
+    to {
+      transform: translateX(-100%);
+    }
+  }
+  
+  @keyframes marquee2 {
+    from {
+      transform: translateX(0%);
+    }
+    to {
+      transform: translateX(-200%);
+    }
+  } */
+
+  /* .marquee {
+    height: 50px;
+    overflow: hidden;
+  }
+
+  .marquee__inner {
+    position: absolute;
+    width: 200%;
+    height: 100%;
     margin: 0;
+    line-height: 50px;
     text-align: center;
     -moz-transform: translateX(100%);
     -webkit-transform: translateX(100%);
     transform: translateX(100%);
-    -moz-animation: scroll-left 8s linear infinite;
-    -webkit-animation: scroll-left 8s linear infinite;
-    animation: scroll-left 8s linear infinite;
+    -moz-animation: scroll-left 2s linear infinite;
+    -webkit-animation: scroll-left 2s linear infinite;
+    animation: scroll-left 10s linear infinite;
   }
 
   @-moz-keyframes scroll-left {
     0% {
-      -moz-transform: translateX(100%);
+        -moz-transform: translateX(100%);
     }
-
     100% {
-      -moz-transform: translateX(-100%);
+        -moz-transform: translateX(-100%);
     }
   }
 
   @-webkit-keyframes scroll-left {
     0% {
-      -webkit-transform: translateX(100%);
+        -webkit-transform: translateX(100%);
     }
-
     100% {
-      -webkit-transform: translateX(-100%);
+        -webkit-transform: translateX(-100%);
     }
   }
 
   @keyframes scroll-left {
     0% {
-      -moz-transform: translateX(100%);
-      -webkit-transform: translateX(100%);
-      transform: translateX(100%);
+        -moz-transform: translateX(100%);
+        -webkit-transform: translateX(100%);
+        transform: translateX(100%);
     }
-
     100% {
-      -moz-transform: translateX(-100%);
-      -webkit-transform: translateX(-100%);
-      transform: translateX(-100%);
+        -moz-transform: translateX(-100%);
+        -webkit-transform: translateX(-100%);
+        transform: translateX(-100%);
     }
+  } */
+
+  /* LATEST MARCO */
+
+  .artist-archive .page,
+  .exhibition-archive .page {
+    padding-bottom: 0;
+  }
+
+  .exhibition-archive .exhibition-info .bottom {
+    display: flex;
+    flex-flow: column wrap;
+    margin-top: 0;
+  }
+
+  .exhibition-archive .exhibition-info .bottom .selected {
+    margin-left: 0;
+    margin-top: 20px;
+    width: fit-content;
+  }
+
+  .exhibition-archive .past-exhibitions .item {
+    align-items: flex-start;
+    display: flex !important;
+    flex-flow: column wrap;
+  }
+
+  .exhibition-archive .exhibitions span+a, 
+  .exhibition-archive .exhibitions span+span {
+    margin-left: 0;
+    margin-top: 20px;
+    width: fit-content;
+  }
+
+  .artist-archive .item-relative {
+    display: none;
+  }
+
+  .artist-single .side-divider,
+  .exhibition-single .side-divider {
+    height: fit-content;
+    position: absolute;
+    width: 100%;
+  }
+
+  .artist-detail .column-centre {
+    margin-left: 0;
+  }
+
+  .artist-detail .gallery-container .profile-pic {
+    position: absolute;
+    top: 60px;
+    right: 0;
+  }
+
+  .artist-detail .gallery-container {
+    grid-template-columns: 1fr;
+    padding-top: 60px;
+  }
+
+  .artist-single footer, 
+  .exhibition-single footer {
+    padding-left: 20px;
+  }
+
+  .exhibition-single .gallery-container .t-80 {
+    margin-bottom: 40px;
+    margin-top: 40px;
   }
 
 }

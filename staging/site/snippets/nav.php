@@ -81,20 +81,28 @@
       <?php endforeach ?>
     <?php endif ?>
 
-    <div class="notice-mobile">
-      <div class="marquee">
-        <div> 
-          <span class="dot"></span>
-          <?php if(date("l")=="Sunday"){ ?>
-            <span>Open today: <?= $site->marqueeOpeningHoursWeekend()->text() ?></span>
-          <?php } else { ?>
-            <span>Open today: <?= $site->marqueeOpeningHoursWeek()->text() ?></span>
-          <?php } ?>
-          <span class="dot"></span>
-          <span>Currently Showing: <?= $site->mobileExhibition()->text() ?></span>
-        </div>
+    <marquee class="notice-mobile marquee">
+      <div class="marquee__inner1">
+        <span class="dot"></span>
+        <?php if(date("l")=="Sunday"){ ?>
+          <span>Open today: <?= $site->marqueeOpeningHoursWeekend()->text() ?></span>
+        <?php } else { ?>
+          <span>Open today: <?= $site->marqueeOpeningHoursWeek()->text() ?></span>
+        <?php } ?>
+        <span class="dot"></span>
+        <span>Currently Showing: <?= $site->mobileExhibition()->text() ?></span>
       </div>
-    </div>
+      <!-- <div class="marquee__inner2">
+        <span class="dot"></span>
+        <?php if(date("l")=="Sunday"){ ?>
+          <span>Open today: <?= $site->marqueeOpeningHoursWeekend()->text() ?></span>
+        <?php } else { ?>
+          <span>Open today: <?= $site->marqueeOpeningHoursWeek()->text() ?></span>
+        <?php } ?>
+        <span class="dot"></span>
+        <span>Currently Showing: <?= $site->mobileExhibition()->text() ?></span>
+      </div> -->
+    </marquee>
     <div class="extra">
       <div><?= $site->mobileAddress()->text() ?></div>
       <div><?= $site->mobileOpeningHours()->kirbytextinline() ?></div>

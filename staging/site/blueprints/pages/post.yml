@@ -29,7 +29,7 @@ columns:
       #   type: url
       #   size: small
       newsLink:
-        label: External News Link
+        label: External Link
         type: text
 
   # sidebar

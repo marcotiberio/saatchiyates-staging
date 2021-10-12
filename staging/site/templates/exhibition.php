@@ -51,7 +51,7 @@
           </div>
 
           <!-- Swiper -->
-          <div class="swiper exhibiotionSwiper">
+          <div class="swiper exhibitionSwiper">
             <div class="swiper-wrapper">
               <?php foreach($page->slideshow()->yaml() as $imageslideshow): ?>
                 <div class="swiper-slide">

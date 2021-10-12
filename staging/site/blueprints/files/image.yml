@@ -24,7 +24,7 @@ columns:
 
         fields:
           column:
-            label: Column
+            label: Listing View - Column
             type: select
             options:
               - c1
