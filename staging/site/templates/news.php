@@ -32,9 +32,7 @@
 
         <?php foreach($page->children()->listed()->flip() as $post): ?>
           <div class="item c2">
-            <?php if ($post->postURL()->isNotEmpty()) : ?>
-              <a target="_blank" href="<?= $post->postURL()->url() ?>">
-            <?php endif ?>
+            <a target="_blank" href="<?= $post->newsLink()->html() ?>">
 
               <?php foreach($post->videos() as $video): ?>
                 <video class="video-element" autoplay loop muted>
@@ -50,14 +48,10 @@
               <div class="caption">
                 <span><?= $post->postTag()->text() ?></span>
                 <span><?= $post->postDescription()->text() ?></span>
-                <?php if ($post->postURL()->isNotEmpty()) : ?>
-                  <a target="_blank" href="<?= $post->postURL()->url() ?>">
-                <?php endif ?>
               </div>
 
-            <?php if ($post->postLink()->isNotEmpty()) : ?>
-              </a>
-            <?php endif ?>
+            
+            </a>
           </div>
         <?php endforeach ?>
 

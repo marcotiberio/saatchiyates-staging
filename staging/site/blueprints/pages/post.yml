@@ -24,10 +24,13 @@ columns:
         label: Post Description
         type: textarea
         size: small
-      url:
-        label: URL
-        type: url
-        size: small
+      # url:
+      #   label: URL
+      #   type: url
+      #   size: small
+      newsLink:
+        label: External News Link
+        type: text
 
   # sidebar
   sidebar:
