@@ -18,7 +18,7 @@ $(document).ready(function(){
     }
 
     $("#bio-btnSide").click(function(){
-        $(".bio-container-side").slideToggle('fast');
+        $(".bio-container-center").slideToggle('fast');
     });
 
     $("#bio-btnCenter").click(function(){
@@ -71,8 +71,6 @@ $(document).ready(function(){
     $(".close-btn").click(function(){
         $(".mobile nav").fadeToggle('fast');
     });
-
-    // $('.marquee').width($('.marquee__inner1').width());
 
 });
 

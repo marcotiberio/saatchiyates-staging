@@ -152,6 +152,10 @@ nav span {
   border-bottom: 1px solid #000;
 }
 
+.selected:hover {
+  cursor: pointer;
+}
+
 .notice {
   float: right;
 }
@@ -388,6 +392,10 @@ img.non-full-width {
   width: 100%;
 }
 /* exhibitons */
+
+.exhibition-single .cat-buy {
+  padding: 10px;
+}
 
 /* exhibiton */
 
@@ -751,10 +759,6 @@ iframe {
   body {
     font-size: 1.3rem;
     letter-spacing: 0.25px;
-  }
-
-  .logo {
-    width: 270px
   }
 }
 
@@ -1469,6 +1473,10 @@ iframe {
   .exhibition-single .gallery-container .t-80 {
     margin-bottom: 40px;
     margin-top: 40px;
+  }
+
+  .exhibition-single .cat-buy {
+    padding: 0;
   }
 
 }

@@ -9,6 +9,11 @@
       slidesPerView: 1,
       spaceBetween: 20,
       loop: true,
+      watchSlidesProgress: true,
+      autoplay: {
+        delay: 2500,
+        disableOnInteraction: false,
+      },
       pagination: {
         el: ".swiper-pagination",
         type: "progressbar",
@@ -17,8 +22,26 @@
         nextEl: ".swiper-button-next",
         prevEl: ".swiper-button-prev",
       },
+      onProgress: move
     });
+    function move() {
+      var elem = document.getElementById("progress"); 
+      var width = 1;
+      var autoplay = 2500;
+      var autoplayTime = autoplay / 100;
+      var id = setInterval(frame, autoplayTime);
+      function frame() {
+          if (width >= 100) {
+              clearInterval(id);
+          } else {
+              width++; 
+              elem.style.width = width + '%'; 
+          }
+      }
+    }
+    console.log(swiper)
   </script>
+
 
   <footer>
     <div class="row">

@@ -22,10 +22,6 @@ columns:
       slideshow:
         headline: Image Gallery
         type: files
-
-      downloads:
-        label: Downloads
-        type: files
       
       gallery:
         type: files
@@ -33,13 +29,34 @@ columns:
           parent: site
           template: files-upload
 
-      buyCatalogue:
-        width: 2/2 
-        label: Buy catalogue
-        layout: cards
-        type: files
-        uploads: cv
-        max: 1
+      infoshopifyButtonId1:
+        label: Info Shopify Button - ID 1
+        width: 1/1
+        type: info
+        text: |
+          Please copy the code you find here:
+          "product-component-XXXXXXXXXXXXX"
+
+      shopifyButtonId1:
+        label: Shopify Button - ID 1
+        width: 1/1
+        type: text
+        size: small
+
+      infoshopifyButtonId2:
+        label: Info Shopify Button - ID 2
+        width: 1/1
+        type: info
+        text: |
+          Please copy the code you find here:
+          ui.createComponent(‘product’, {
+          id: ‘XXXXXXXXXXXXX’"
+      
+      shopifyButtonId2:
+        label: Shopify Button - ID 2
+        width: 1/1
+        type: text
+        size: small
 
       name:
         width: 1/3
