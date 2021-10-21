@@ -2,6 +2,7 @@
 
   <!-- Swiper JS -->
   <script src="https://unpkg.com/swiper/swiper-bundle.min.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/@fancyapps/ui@4.0/dist/fancybox.umd.js"></script>
 
   <!-- Initialize Swiper -->
   <script>
@@ -42,6 +43,21 @@
     console.log(swiper)
   </script>
 
+  <script>
+    Fancybox.bind("[data-fancybox]", {
+      Thumbs: {
+        autoStart: false,
+      },
+      Toolbar: {
+        display: [
+          { id: "prev", position: "center" },
+          { id: "counter", position: "center" },
+          { id: "next", position: "center" },
+          "close",
+        ],
+      },
+    });
+  </script>
 
   <footer>
     <div class="row">

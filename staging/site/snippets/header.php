@@ -10,6 +10,7 @@
     <link rel="icon" type="image/png" href="<?= url('favicon-96x96.png') ?>" sizes="96x96">
 
     <link rel="stylesheet" href="https://unpkg.com/swiper/swiper-bundle.min.css"/>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@fancyapps/ui@4.0/dist/fancybox.css"/>
 
     <?= css([
       'assets/css/pyi6ych.css',
@@ -19,6 +20,7 @@
       'assets/css/slick.css',
       'assets/css/slideshows.css',
       'assets/css/swiper.css',
+      'assets/css/fancybox.css',
       '@auto'
     ]) ?>
 

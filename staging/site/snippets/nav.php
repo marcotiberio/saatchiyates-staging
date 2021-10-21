@@ -26,7 +26,9 @@
       if($items and $items->isNotEmpty()):
       ?>
         <?php foreach($items as $item): ?>
-          <a<?php e($item->isOpen(), ' class="selected"') ?> href="<?= $item->url() ?>"><?= $item->title()->html() ?></a>
+          <div class="item">
+            <a<?php e($item->isOpen(), ' class="selected"') ?> href="<?= $item->url() ?>"><?= $item->title()->html() ?></a>
+          </div>
         <?php endforeach ?>
       <?php endif ?>
 
@@ -36,6 +38,7 @@
       <a <?php if($filename=="private-sales") echo "class='selected'" ?>href="private-sales/">Private Sales</a>
       <a <?php if($filename=="news") echo "class='selected'" ?>href="news.php">News</a>
       <a <?php if($filename=="contact") echo "class='selected'" ?>href="saatchi-yates-cms/contact/">Contact</a> -->
+      <a href="http://shop.saatchiyates.com/" target="_blank"><span class="">Shop</span></a>
     </div>
     
     <span class="notice">
@@ -80,6 +83,8 @@
         <a href="<?= $item->url() ?>"><?= $item->title()->html() ?></a>
       <?php endforeach ?>
     <?php endif ?>
+    <a href="http://shop.saatchiyates.com/" target="_blank"><span class="">Shop</span></a>
+    
 
     <marquee class="notice-mobile marquee">
       <div class="marquee__inner1">

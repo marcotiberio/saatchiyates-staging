@@ -15,15 +15,26 @@ columns:
       content:
         type: fields
         fields:
-          exhibitionName:
-            label: Exhibition Name
+          exhibitionNameDesktop:
+            label: Exhibition Name Desktop (leave empty to hide)
             type: text
-          exhibitionDate:
-            label: Exhibition Date
+          exhibitionDateDesktop:
+            label: Exhibition Date Desktop (leave empty to hide)
             type: text
             width: 1/2
-          exhibitonSubHeadline:
-            label: Exhibition Tag
+          exhibitonSubHeadlineDesktop:
+            label: Exhibition Tag Desktop (leave empty to hide)
+            type: text
+            width: 1/2
+          exhibitionNameMobile:
+            label: Exhibition Name Mobile (leave empty to hide)
+            type: text
+          exhibitionDateMobile:
+            label: Exhibition Date Mobile (leave empty to hide)
+            type: text
+            width: 1/2
+          exhibitonSubHeadlineMobile:
+            label: Exhibition Tag Mobile (leave empty to hide)
             type: text
             width: 1/2
 

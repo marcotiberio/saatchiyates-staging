@@ -1,1 +1,13 @@
+Caption: 
+
+----
+
+Description: 
+
+----
+
+Column: c2
+
+----
+
 Template: image

@@ -38,6 +38,15 @@ $(document).ready(function(){
         });
     });
 
+    $("#cat-btnSide").click(function(){
+        var elmnt = document.getElementsByClassName("cat-buy")[0];
+        window.scroll({
+          top: elmnt.offsetTop, 
+          left: 0, 
+          behavior: 'smooth'
+        });
+    });
+
     $(window).scroll(function() {
         if(window.outerWidth > 1024) {
             if ($(this).scrollTop() > 250) {

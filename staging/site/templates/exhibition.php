@@ -3,6 +3,7 @@
   <div class="page"> 
 
     <?php snippet('nav') ?>
+    <?php $slide_count = 3 ?>
 
     <!-- Page content -->
     <main class="artist-detail container">
@@ -16,11 +17,7 @@
                 <div><?= $page->dates()->text() ?></div>
                 <div class="info-bottom">
                   <a id="bio-btnSide" class="bio-btn selected" href="#">About the exhibition</a>
-                  <?php foreach ($page->files()->filterBy('template', 'cv') as $cv): ?>
-                  <a class="selected l-40" target="_blank" href="<?= $cv->url() ?>">
-                    Buy Catalogue
-                  </a>
-                  <?php endforeach ?>
+                  <a id="cat-btnSide" class="selected l-40" target="#">Buy Catalogue</a>
                 </div>
               </div>
               <div class="bio-container-side">
@@ -56,7 +53,7 @@
               <?php foreach($page->slideshow()->yaml() as $imageslideshow): ?>
                 <div class="swiper-slide">
                     <?php if($imageslideshow = $page->image($imageslideshow)): ?>
-                      <?= $imageslideshow->crop(1200,500)->html(); ?>  		    
+                      <?= $imageslideshow->crop(1200,500)->html(); ?>
                     <?php endif ?>
                 </div>
               <?php endforeach; ?>
@@ -69,18 +66,16 @@
 
           <div class="flex-column t-40">
             <?php
-            $imageGallery =  $page->gallery()->toFiles();
+            $imageGallery = $page->gallery()->toFiles();
             foreach($imageGallery as $imageGallery): ?>
-              <?php if ($imageGallery->isEmpty()): ?>
-                <div class="item c3 w1">
-              <?php else: ?>
-                <div class="item <?= $imageGallery->Column() ?> w1">
-              <?php endif ?>
-              <img src="<?= $imageGallery->resize(null, null, 90)->url() ?>">
-              <div class="caption">
-                <div><?= $imageGallery->caption() ?></div>
-                <div><?= $imageGallery->description() ?></div>
-              </div>
+              <div class="item <?= $imageGallery->Column() ?>">
+                <a href="<?= $imageGallery->resize(null, null, 60)->url() ?>" data-fancybox="gallery" data-src="<?= $imageGallery->resize(null, null, 60)->url() ?>">
+                  <img class="hb-single" src="<?= $imageGallery->resize(null, null, 60)->url() ?>">
+                  <div class="caption">
+                    <div><?= $imageGallery->caption() ?></div>
+                    <div><?= $imageGallery->description() ?></div>
+                  </div>
+                </a>
               </div>
             <?php endforeach ?>
           </div>
@@ -289,16 +284,16 @@
         </div>
 
         <div class="item c-special-1 desktop column-right">
-          <div>View as</div>
+          <!-- <div>View as</div>
           <div class="t-10">
-            <span class="view-stack-btn"><img class="active" src="<?= url('assets/img/View-Stack.svg')?>"></span>
-            <span class="view-index-btn l-10"><img src="<?= url('assets/img/View-Index.svg')?>"></span>       
-          </div> 
+            <span class="view-index-btn l-10"><img class="active" src="<?= url('assets/img/View-Index.svg')?>"></span>       
+          </div>  -->
         </div>
       </div>
     </main>
 
   </div>
+  
 <?php snippet('footer') ?>
 
   

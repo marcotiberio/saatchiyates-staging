@@ -14,10 +14,10 @@
 
     <!-- Page content -->  
     <main> 
-      <div class="align-bottom mobile">
-        <span><?= $page->exhibitonSubHeadline()->html() ?></span>
-        <span><?= $page->exhibitionDate()->html() ?></span>
-        <h1 class="t-20"><?= $page->exhibitionName()->html() ?></h1>
+      <div class="align-bottom desktop">
+        <span><?= $page->exhibitonSubHeadlineDesktop()->html() ?></span>
+        <span><?= $page->exhibitionDateDesktop()->html() ?></span>
+        <h1 class="t-20"><?= $page->exhibitionNameDesktop()->html() ?></h1>
       </div>
     </main>
 
@@ -36,9 +36,9 @@
     <!-- Page content -->  
     <main> 
       <div class="align-bottom mobile">
-        <span><?= $page->exhibitonSubHeadline()->html() ?></span>
-        <span><?= $page->exhibitionDate()->html() ?></span>
-        <h1 class="t-20"><?= $page->exhibitionName()->html() ?></h1>
+        <span><?= $page->exhibitonSubHeadlineMobile()->html() ?></span>
+        <span><?= $page->exhibitionDateMobile()->html() ?></span>
+        <h1 class="t-20"><?= $page->exhibitionNameMobile()->html() ?></h1>
       </div>
     </main>
 

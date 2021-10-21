@@ -6,7 +6,7 @@ Description: Test Description
 
 ----
 
-Column: 
+Column: c1
 
 ----
 

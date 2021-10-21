@@ -60,12 +60,12 @@ columns:
 
       name:
         width: 1/3
-        label: First Name
+        label: Artist Name
         type: text
 
       dates:
         width: 1/3
-        label: Dates
+        label: Exhibition Date
         type: text
 
       exhibitionType:
@@ -109,7 +109,7 @@ columns:
 
       files:
         type: files
-        headline: Image Gallery
+        headline: Image Library
         template: image
         uploads:
           template: image

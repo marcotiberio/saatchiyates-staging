@@ -12,7 +12,7 @@ columns:
             type: headline
           address:
             label: Address
-            type: text
+            type: textarea
             width: 1/2
           openingHours:
             label: Opening Hours
@@ -35,14 +35,14 @@ columns:
             type: email
             width: 1/2
           copyright:
-            label: copyright
+            label: Copyright
             type: text
             width: 1/2
           socialMedia:
             label: Social Media
             type: headline
           whatsApp:
-            label: What's App
+            label: WhatsApp
             type: text
             width: 1/2
           facebook:

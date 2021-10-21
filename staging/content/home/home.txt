@@ -2,15 +2,27 @@ Title: Home
 
 ----
 
-Exhibitionname: Benjamin Spiers
+Exhibitionnamedesktop: 
 
 ----
 
-Exhibitiondate: 9 September - 20 October 2021
+Exhibitiondatedesktop: 
 
 ----
 
-Exhibitonsubheadline: Solo Exhibition
+Exhibitonsubheadlinedesktop: 
+
+----
+
+Exhibitionnamemobile: Benjamin Spiers
+
+----
+
+Exhibitiondatemobile: 9 September - 20 October 2021
+
+----
+
+Exhibitonsubheadlinemobile: Solo Exhibition
 
 ----
 
@@ -23,6 +35,18 @@ Backgroundimagedesktop:
 Backgroundimagemobile:
 
 - background-image-mobile.png
+
+----
+
+Exhibitionname: Benjamin Spiers
+
+----
+
+Exhibitiondate: 9 September - 20 October 2021
+
+----
+
+Exhibitonsubheadline: Solo Exhibition
 
 ----
 

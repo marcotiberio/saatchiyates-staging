@@ -67,6 +67,10 @@ columns:
         type: textarea
         size: small
 
+      gallery:
+        headline: Image Gallery
+        type: files
+
   # sidebar
   sidebar:
     width: 1/3
@@ -74,7 +78,7 @@ columns:
 
       files:
         type: files
-        headline: Image Gallery
+        headline: Image Library
         template: image
         uploads:
           template: image
